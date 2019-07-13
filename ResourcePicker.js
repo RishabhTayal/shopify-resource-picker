@@ -61,17 +61,22 @@ class ResourcePicker extends Component {
         <ModalFooter>
           <div className="mr-auto">2 products selected</div>
           <Button
+            color="light"
             text="Cancel"
             onClick={() => {
               this.props.onSave(this.state.themeName);
             }}
-          />
+          >
+            Cancel
+          </Button>
           <Button
             updating={this.props.themeUpdating}
             onClick={() => {
               this.props.onSave(this.state.themeName);
             }}
-          />
+          >
+            Save
+          </Button>
         </ModalFooter>
       </Modal>
     );
