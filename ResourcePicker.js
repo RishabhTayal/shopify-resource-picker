@@ -4,12 +4,11 @@ import 'bulma/bulma';
 
 import Axios from 'axios';
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
 import { Button, Input, ListGroup, Modal, ModalBody, ModalFooter, ModalHeader } from 'reactstrap';
 
 import ResourcePickerListItem from './ResourcePickerListItem';
 
-class ResourcePicker extends Component {
+export default class ResourcePicker extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -82,5 +81,3 @@ class ResourcePicker extends Component {
     );
   }
 }
-
-ReactDOM.render(<ResourcePicker />, document.getElementById('app'));
